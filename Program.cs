@@ -253,6 +253,57 @@ namespace ConsoleApp1
             #endregion
 
             #endregion
+
+            #region LINQ - Quantifiers
+
+            #region 1. Determine if any of the words in dictionary_english.txt contain the substring "ei"
+            #endregion
+
+
+            #region 2. Return a grouped list of products only for categories that have at least one product that is out of stock
+            //var Result = ListGenerator.ProductList
+            //    .GroupBy(p => p.Category)
+            //    .Where(g => g.Any(p => p.UnitsInStock == 0))   
+            //    .Select(g => new
+            //    {
+            //        Category = g.Key,
+            //        Products = g.ToList()
+            //    });
+
+            //foreach (var group in Result)
+            //{
+            //    Console.WriteLine($"Category: {group.Category}");
+            //    foreach (var p in group.Products)
+            //    {
+            //        Console.WriteLine($"   - {p.ProductName} (Stock: {p.UnitsInStock})");
+            //    }
+            //}
+            #endregion
+
+
+            #region 3. Return a grouped list of products only for categories that have all of their products in stock
+            //var categoriesAllInStock = ListGenerator.ProductList
+            //    .GroupBy(p => p.Category)
+            //    .Where(g => g.All(p => p.UnitsInStock > 0))   // all products in stock
+            //    .Select(g => new
+            //    {
+            //        Category = g.Key,
+            //        Products = g.ToList()
+            //    });
+
+            //Console.WriteLine("\nCategories with all products in stock:");
+            //foreach (var group in categoriesAllInStock)
+            //{
+            //    Console.WriteLine($"Category: {group.Category}");
+            //    foreach (var p in group.Products)
+            //    {
+            //        Console.WriteLine($"   - {p.ProductName} (Stock: {p.UnitsInStock})");
+            //    }
+            //}
+            #endregion
+
+
+            #endregion
         }
     }
 }
