@@ -304,6 +304,45 @@ namespace ConsoleApp1
 
 
             #endregion
+
+            #region LINQ – Grouping Operators
+
+            #region 1. Group numbers by remainder when divided by 5
+            //List<int> numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+
+            //var groups = numbers.GroupBy(n => n % 5);
+
+            //foreach (var g in groups)
+            //{
+            //    Console.WriteLine($"Numbers with a remainder of {g.Key} when divided by 5:");
+            //    foreach (var n in g)
+            //    {
+            //        Console.WriteLine($" {n}");
+            //    }
+            //}
+            #endregion
+
+            #region 2. Group dictionary words by first letter
+            #endregion
+
+            #region 3. Group words that consist of the same characters
+            //string[] arr = { "from", "salt", "earn", "last", "near", "form" };
+
+            //var anagramGroups = arr.GroupBy(w => String.Concat(w.OrderBy(c => c)));
+
+            //foreach (var g in anagramGroups)
+            //{
+            //    Console.WriteLine($".....");
+            //    foreach (var w in g)
+            //    {
+            //        Console.WriteLine($" {w}");
+            //    }
+            //}
+            #endregion
+
+
+
+            #endregion
         }
     }
 }
